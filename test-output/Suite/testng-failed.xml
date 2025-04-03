@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Testing Chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="googleSearch_Suite.GoogleSearch_Pass_ViratKohli">
+        <methods>
+          <include name="quit"/>
+          <include name="searchViratKohli"/>
+          <include name="launch"/>
+        </methods>
+      </class> <!-- googleSearch_Suite.GoogleSearch_Pass_ViratKohli -->
+      <class name="googleSearch_Suite.GoogleSearch_Pass_MSDhoni">
+        <methods>
+          <include name="searchMSDhoni"/>
+          <include name="quit"/>
+          <include name="launch"/>
+        </methods>
+      </class> <!-- googleSearch_Suite.GoogleSearch_Pass_MSDhoni -->
+    </classes>
+  </test> <!-- Testing Chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->
